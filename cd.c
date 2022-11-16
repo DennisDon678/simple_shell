@@ -33,7 +33,6 @@ void cd_dot(data_shell *datash)
 	if (cp_strtok_pwd != NULL)
 	{
 		cp_strtok_pwd = _strtok(NULL, "\0");
-
 		
 		if (cp_strtok_pwd != NULL)
 			rev_string(cp_strtok_pwd);
@@ -164,3 +163,4 @@ void cd_to_home(data_shell *datash)
 	free(p_pwd);
 	datash->status = 0;
 }
+
